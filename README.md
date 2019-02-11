@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+# Welcome to the UCHC Hackathon (March 2019)!
+
+## This is GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/aims-cdas/uchc-hackathon-march-2019/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
