@@ -4,7 +4,7 @@
 
 Contact us: [Kate Hayden](mailto:khayden@uchc.edu)
 
-[Registration](https://www.emailmeform.com/builder/form/4mco5B1a84F2)
+[**Registration**](https://www.emailmeform.com/builder/form/4mco5B1a84F2)
 
 ## Office of Health Strategy Medication Reconciliation Hackathon at UConn Health
 
@@ -31,7 +31,7 @@ Friday April 5th & Saturday 6th 2019
 
 **Where?**
 
-Academic Entrance
+Academic Entrance\
 UConn Health, 263 Farmington Ave, Farmington, CT 06030
 
 **Cost?**
@@ -120,7 +120,9 @@ From our main entrance at 263 Farmington Avenue, proceed to the roundabout and t
 **Saturday April 6th 2019**\
 From our main entrance at 263 Farmington Avenue, proceed to the roundabout and take your second right onto Academic Rd (not left toward the main entrance) to our Upper Campus. Head up the hill, past the emergency room, and the Academic Entrance will be on your left. There will be a parking attendant directing traffic to the free lots there.
 
-![Main Building – Academic Entrance](img/academic-entrance-300x200.jpg)
+[**Parking Map (PDF)**](https://health.uconn.edu/park/wp-content/uploads/sites/64/2018/03/Health-Visitor-Only-Parking-Map.pdf)
+
+![Main Building – Academic Entrance](img/academic-entrance-300x200.jpg "Main Building – Academic Entrance")
 
 ### Recommended Accommodations
 
