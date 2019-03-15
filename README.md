@@ -2,7 +2,7 @@
 
 [Website at the Center for Quantitative Medicine](https://health.uconn.edu/quantitative-medicine/hackathon-2019/)
 
-Contact us: [Kate Hayden](mailto:khayden@uchc.edu)
+Contact: [Kate Hayden](mailto:khayden@uchc.edu)
 
 [**Registration**](https://www.emailmeform.com/builder/form/4mco5B1a84F2)
 
