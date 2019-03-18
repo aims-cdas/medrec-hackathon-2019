@@ -21,7 +21,7 @@ git &lt;command&gt; --help</code></pre>
 <p>(The <code>-v</code> (<code>--verbose</code>) option is commonly used to also print remote addresses.)</p>
 <h2 id="branches">Branches</h2>
 <p>When you create or clone a Git repo, you usually start out in the <code>master</code> branch, which is the “public-facing” branch people will see when they visit your repository. Developers use <a href="https://git-scm.com/docs/git-branch">branches</a> to experiment with changes, which can be discarded if fruitless or <a href="https://git-scm.com/docs/git-merge">merged</a> if fruitful.</p>
-<p>As a rule, <strong>make edits in separate branches</strong>. Once you’re satisfied with a branch, you can merge it into <code>master</code>. Here are the basic commands for working with branches:</p>
+<p>As a rule, <strong>make changes in separate branches</strong>. Once you’re satisfied with a branch, you can merge it into <code>master</code>. Here are the basic commands for working with branches:</p>
 <p>Show all branches:</p>
 <pre class="command"><code>git branch</code></pre>
 <p>Checkout (switch to) an existing branch:</p>
@@ -30,7 +30,7 @@ git &lt;command&gt; --help</code></pre>
 <pre class="command"><code>git checkout -b new-branch</code></pre>
 <p>Merge a branch into the current branch:</p>
 <pre class="command"><code>git merge experimental</code></pre>
-<p>If different branches include edits to the same files, then merging can get complicated fast. I recommend making every effort to edit any source file in only one branch at a time. (Files rendered from source files, e.g. images from code scripts, are of less concern, but conflicts may still need to be resolved manually.) For a thorough discussion of merge conflict resolution, see <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">the Git book</a>.</p>
+<p>If different branches include changes to the same files, then merging can get complicated fast. I recommend making every effort to edit any source file in only one branch at a time. (Files rendered from source files, e.g. images from code scripts, are of less concern, but conflicts may still need to be resolved manually.) For a thorough discussion of merge conflict resolution, see <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">the Git book</a>.</p>
 <h2 id="tracking-files-and-committing-changes">Tracking files and committing changes</h2>
 <p>Git tracks changes to any files not listed in the hidden plain text file <code>.gitignore</code> located in the Git repo (hence, to all files if <code>.gitignore</code> does not exist). Beware that adding a file to <code>.gitignore</code> does not just stop Git from tracking changes to it but stops Git from tracking it altogether. Commonly untracked files include rendered files like images and PDF documents.</p>
 <p>If you’ve made changes to any tracked files since your last commit, you can view them by checking the status of the repo:</p>

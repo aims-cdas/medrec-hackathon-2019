@@ -41,8 +41,6 @@ git remote
 ```
 (The `-v` (`--verbose`) option is commonly used to also print remote addresses.)
 
-So that different teams' work does not produce merge conflicts, create a new  subdirectory to store your work (with a unique name!).
-
 ## Branches
 
 When you create or clone a Git repo, you usually start out in the `master` branch, which is the "public-facing" branch people will see when they visit your repository. Developers use [branches](https://git-scm.com/docs/git-branch) to experiment with changes, which can be discarded if fruitless or [merged](https://git-scm.com/docs/git-merge) if fruitful.
