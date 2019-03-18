@@ -1,0 +1,54 @@
+<h1 id="using-git-and-github">Using Git and GitHub</h1>
+<p><strong>Git</strong> is version tracking and control software widely used both by individual developers and by collaborative development teams. <strong>GitHub</strong> is the most popular public code and documentation repository built on Git. Participants in the <a href="../">2019 MedRec Hackathon</a> can fork this repository (“repo”) to build upon the instruction and resources it contains, as explained below.</p>
+<h2 id="git-tutorials">Git tutorials</h2>
+<p>Many excellent Git tutorials exist, e.g. <a href="https://git-scm.com/docs/gittutorial">at the Git website</a> and <a href="https://www.atlassian.com/git/tutorials">at Atlassian</a>, who maintain Bitbucket. Still, Git often takes a lot of getting used to. Here, we’ll cover the bare basics.</p>
+<h2 id="introduction-installation-and-documentation">Introduction, installation, and documentation</h2>
+<p>For a conceptual introduction to Git leading up to installation instructions, begin with <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">Getting Started</a> at the Git website.</p>
+<p>The website is a valuable source of thorough documentation, and i (Cory) recommend it as the <em>second</em> step in figuring out how to accomplish something using Git. The <em>first</em> is the software documentation accessible using <code>--help</code>:</p>
+<pre class="command"><code>git --help
+git &lt;command&gt; --help</code></pre>
+<p>The <em>third</em> source i’d recommend is search engines, which usually take me to well-posed questions and comprehensive answers on <a href="https://stackoverflow.com/">StackOverflow</a>.</p>
+<h2 id="fork-and-clone-the-hackathon-repo">Fork and clone the Hackathon repo</h2>
+<p>To more transparently track and share our work, we ask participants to fork this repository to their own GitHub accounts. Fill out <a href="https://github.com/join">this page</a> to create a GitHub account if you don’t yet have one.</p>
+<p>To <a href="https://help.github.com/en/articles/fork-a-repo">fork</a> this repo to your own copy, click the <strong>Fork</strong> button at the top of the page:</p>
+<p><img src="screenshot-fork.png" alt="Screenshot Fork" /><br />
+</p>
+<p>This creates a new repository on your account that is connected to, and can be synchronized with, the original.</p>
+<p>To work in your fork on your own machine, you need to <a href="https://help.github.com/en/articles/cloning-a-repository">clone</a> your fork to a local directory. To begin, navigate to the directory where you want to work and use Git in your command line tool:</p>
+<pre class="command"><code>git clone https://github.com/aims-cdas/uchc-hackathon-march-2019</code></pre>
+<p>This creates a new directory named <code>uchc-hackathon-march-2019</code> containing the contents of the repo, along with its Git history and the repo URL as a tracked <a href="https://git-scm.com/docs/git-remote">remote</a> called <code>origin</code>. You can view remotes using the <code>remote</code> command:</p>
+<pre class="command"><code>git remote</code></pre>
+<p>(The <code>-v</code> (<code>--verbose</code>) option is commonly used to also print remote addresses.)</p>
+<h2 id="branches">Branches</h2>
+<p>When you create or clone a Git repo, you usually start out in the <code>master</code> branch, which is the “public-facing” branch people will see when they visit your repository. Developers use <a href="https://git-scm.com/docs/git-branch">branches</a> to experiment with changes, which can be discarded if fruitless or <a href="https://git-scm.com/docs/git-merge">merged</a> if fruitful.</p>
+<p>As a rule, <strong>make edits in separate branches</strong>. Once you’re satisfied with a branch, you can merge it into <code>master</code>. Here are the basic commands for working with branches:</p>
+<p>Show all branches:</p>
+<pre class="command"><code>git branch</code></pre>
+<p>Checkout (switch to) an existing branch:</p>
+<pre class="command"><code>git checkout experimental</code></pre>
+<p>Create a new branch and check it out:</p>
+<pre class="command"><code>git checkout -b new-branch</code></pre>
+<p>Merge a branch into the current branch:</p>
+<pre class="command"><code>git merge experimental</code></pre>
+<p>If different branches include edits to the same files, then merging can get complicated fast. I recommend making every effort to edit any source file in only one branch at a time. (Files rendered from source files, e.g. images from code scripts, are of less concern, but conflicts may still need to be resolved manually.) For a thorough discussion of merge conflict resolution, see <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">the Git book</a>.</p>
+<h2 id="tracking-files-and-committing-changes">Tracking files and committing changes</h2>
+<p>Git tracks changes to any files not listed in the hidden plain text file <code>.gitignore</code> located in the Git repo (hence, to all files if <code>.gitignore</code> does not exist). Beware that adding a file to <code>.gitignore</code> does not just stop Git from tracking changes to it but stops Git from tracking it altogether. Commonly untracked files include rendered files like images and PDF documents.</p>
+<p>If you’ve made changes to any tracked files since your last commit, you can view them by checking the status of the repo:</p>
+<pre class="command"><code>git status</code></pre>
+<p>To add changes to specific files to the index, i.e. in the queue to be committed:</p>
+<pre class="command"><code>git add &lt;filename&gt;</code></pre>
+<p>To revert files to their previously committed state, undoing any changes since that commit:</p>
+<pre class="command"><code>git checkout &lt;filename&gt;</code></pre>
+<p>To commit the index, creating a new commit in the commit history,</p>
+<pre class="command"><code>git commit</code></pre>
+<p>This will prompt you to provide a message describing this commit; to do this in one step, add the <code>-m '&lt;commit message in quotes&gt;'</code> option to <code>git commit</code>.</p>
+<p>To review the commit history:</p>
+<pre class="command"><code>git log</code></pre>
+<p>As a rule, <strong>make sure that all tracked changes have been undone or committed before checking out a different branch</strong>.</p>
+<h2 id="head"><code>HEAD</code></h2>
+<p>At any given time, the currently active version of the repo corresponds to a reference called <a href="http://researchhubs.com/post/computing/git/what-is-HEAD-in-git.html"><code>HEAD</code></a>. When you switch to a new branch, <code>HEAD</code> switches to the most recent commit in that branch. When you commit changes, <code>HEAD</code> switches to the commit created by that action. It is also possible to checkout previous commits, which detaches <code>HEAD</code>.</p>
+<h2 id="merging-branches">Merging branches</h2>
+<p>Merging is simple when no conflicts arise. Just first checkout the branch to be merged <em>into</em>, then merge in the other branch, say <code>branch-to-be-merged</code>:</p>
+<pre class="command"><code>git merge &lt;branch-to-be-merged&gt;</code></pre>
+<p>When conflicts <em>do</em> arise, you’ll need to deal with them manually. There are a variety of merge tools (described <a href="https://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git">at StackOverflow</a> and <a href="https://developer.atlassian.com/blog/2015/12/tips-tools-to-solve-git-conflicts/">at Atlassian</a>) built for this purpose, with features that appeal to different developers. To activate the one configured with Git on your machine:</p>
+<pre class="command"><code>git mergetool</code></pre>
