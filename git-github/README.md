@@ -25,7 +25,7 @@ To more transparently track and share our work, we ask participants to fork this
 
 To [fork](https://help.github.com/en/articles/fork-a-repo) this repo to your own copy, click the **Fork** button at the top of the page:
 
-![Screenshot Fork](screenshot-fork.png)\
+![Screenshot Fork](screenshot-fork.png)
 
 This creates a new repository on your account that is connected to, and can be synchronized with, the original.
 
