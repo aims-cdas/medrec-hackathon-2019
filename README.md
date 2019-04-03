@@ -1,4 +1,4 @@
-# Hackathon 2019
+# MedRec Hackathon 2019
 
 [Website at the Center for Quantitative Medicine](https://health.uconn.edu/quantitative-medicine/hackathon-2019/)
 
