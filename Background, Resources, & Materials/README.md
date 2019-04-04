@@ -17,3 +17,5 @@ This folder contains the following documents:
 3. **MedRec Persona Scenarios & Activity** (`.pdf`): Persona Scenarios of patients that would benefit from the process of Medication Reconciliation
 4. **FHIR Activity Guide** (`.pdf`): FHIR® Pilot Interoperability Testbed (FHIR-PIT) Medication Reconciliation FHIR Module
 5. **Table Reference** (`.pptx`): Materials on how to address medication reconciliation
+6. **RxNorm and FHIR PIT for iOS** (`.md`): Accessing FHIR PIT and RxNorm APIs from an iOS Project
+7. **OpenEMR FHIR Endpoints** (`.md`): Available FHIR endpoints for OpenEMR
