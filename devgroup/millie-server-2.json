@@ -14,10 +14,72 @@
   ],
   "entry": [
     {
+      "fullUrl": "https://fire-pit.mihin.org/po-ehr-2/baseDstu3/MedicationStatement/MillieBryantGabapentinMS",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "MillieBryantGabapentinMS",
+        "meta": {
+          "versionId": "7",
+          "lastUpdated": "2019-04-04T13:34:36.000+00:00",
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/daf-medicationstatement"
+          ]
+        },
+        "identifier": [
+          {
+            "value": "27f8a4d1-1bbd-48ce-ad32-d7fcafbf17dfa"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/Gabapentin300mg"
+        },
+        "effectivePeriod": {
+          "start": "2019-01-07"
+        },
+        "informationSource": {
+          "reference": "https://fire-pit.mihin.org/qhin-hdir/baseDstu3/Practitioner/RalphFarrell"
+        },
+        "subject": {
+          "reference": "Patient/MillieBryant"
+        },
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "1 tablet three times per day",
+            "timing": {
+              "repeat": {
+                "frequency": 3,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 300,
+              "unit": "mg"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
       "fullUrl": "https://fire-pit.mihin.org/po-ehr-2/baseDstu3/MedicationStatement/MillieBryantMetforminMS",
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "MillieBryantMetforminMS",
+       "id": "MillieBryantMetforminMS",
         "meta": {
           "versionId": "5",
           "lastUpdated": "2019-04-04T13:34:35.000+00:00",
@@ -34,7 +96,7 @@
         "medicationReference": {
           "reference": "Medication/Metformin500mg"
         },
-        "effectivePeriod": {
+       "effectivePeriod": {
           "start": "2019-01-07"
         },
         "informationSource": {
@@ -97,7 +159,7 @@
           "reference": "Medication/Nitroglycerin0.3MG"
         },
         "effectivePeriod": {
-          "start": "2019-03-10"
+         "start": "2019-03-10"
         },
         "informationSource": {
           "reference": "https://fire-pit.mihin.org/qhin-hdir/baseDstu3/Practitioner/AubreySadler"
@@ -122,68 +184,6 @@
             "doseQuantity": {
               "value": 0.3,
               "unit": "MG"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://fire-pit.mihin.org/po-ehr-2/baseDstu3/MedicationStatement/MillieBryantGabapentinMS",
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "MillieBryantGabapentinMS",
-        "meta": {
-          "versionId": "7",
-          "lastUpdated": "2019-04-04T13:34:36.000+00:00",
-          "profile": [
-            "http://hl7.org/fhir/StructureDefinition/daf-medicationstatement"
-          ]
-        },
-        "identifier": [
-          {
-            "value": "27f8a4d1-1bbd-48ce-ad32-d7fcafbf17dfa"
-          }
-        ],
-        "status": "active",
-        "medicationReference": {
-          "reference": "Medication/Gabapentin300mg"
-        },
-        "effectivePeriod": {
-          "start": "2019-01-07"
-        },
-        "informationSource": {
-          "reference": "https://fire-pit.mihin.org/qhin-hdir/baseDstu3/Practitioner/RalphFarrell"
-        },
-        "subject": {
-          "reference": "Patient/MillieBryant"
-        },
-        "dosage": [
-          {
-            "sequence": 1,
-            "text": "1 tablet three times per day",
-            "timing": {
-              "repeat": {
-                "frequency": 3,
-                "period": 1,
-                "periodUnit": "d"
-              }
-            },
-            "asNeededBoolean": false,
-            "route": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "260548002",
-                  "display": "Oral"
-                }
-              ]
-            },
-            "doseQuantity": {
-              "value": 300,
-              "unit": "mg"
             }
           }
         ]

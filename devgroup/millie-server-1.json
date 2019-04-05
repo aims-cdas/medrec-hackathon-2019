@@ -1,5 +1,3 @@
-
-
 {
   "resourceType": "Bundle",
   "id": "d0920dd3-38a2-43d1-a07e-db57d9abe781",
@@ -15,68 +13,6 @@
     }
   ],
   "entry": [
-    {
-      "fullUrl": "https://fire-pit.mihin.org/po-ehr-1/baseDstu3/MedicationStatement/MillieBryantMetforminMS",
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "id": "MillieBryantMetforminMS",
-        "meta": {
-          "versionId": "6",
-          "lastUpdated": "2019-04-04T13:32:47.000+00:00",
-          "profile": [
-            "http://hl7.org/fhir/StructureDefinition/daf-medicationstatement"
-          ]
-        },
-        "identifier": [
-          {
-            "value": "27f8a4d1-1bbd-48ce-ad32-d7fcafbf17dfa"
-          }
-        ],
-        "status": "active",
-        "medicationReference": {
-          "reference": "Medication/Metformin500mg"
-        },
-        "effectivePeriod": {
-          "start": "2019-01-07"
-        },
-        "informationSource": {
-          "reference": "https://fire-pit.mihin.org/qhin-hdir/baseDstu3/Practitioner/RalphFarrell"
-        },
-        "subject": {
-          "reference": "Patient/MillieBryant"
-        },
-        "dosage": [
-          {
-            "sequence": 1,
-            "text": "1 tablet two times per day",
-            "timing": {
-              "repeat": {
-                "frequency": 2,
-                "period": 1,
-                "periodUnit": "d"
-              }
-            },
-            "asNeededBoolean": false,
-            "route": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "260548002",
-                  "display": "Oral"
-                }
-              ]
-            },
-            "doseQuantity": {
-              "value": 500,
-              "unit": "mg"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
     {
       "fullUrl": "https://fire-pit.mihin.org/po-ehr-1/baseDstu3/MedicationStatement/MillieBryantGabapentinMS",
       "resource": {
@@ -130,6 +66,68 @@
             },
             "doseQuantity": {
               "value": 300,
+              "unit": "mg"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fire-pit.mihin.org/po-ehr-1/baseDstu3/MedicationStatement/MillieBryantMetforminMS",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "MillieBryantMetforminMS",
+        "meta": {
+          "versionId": "6",
+          "lastUpdated": "2019-04-04T13:32:47.000+00:00",
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/daf-medicationstatement"
+          ]
+        },
+        "identifier": [
+          {
+            "value": "27f8a4d1-1bbd-48ce-ad32-d7fcafbf17dfa"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/Metformin500mg"
+        },
+        "effectivePeriod": {
+          "start": "2019-01-07"
+        },
+        "informationSource": {
+          "reference": "https://fire-pit.mihin.org/qhin-hdir/baseDstu3/Practitioner/RalphFarrell"
+        },
+        "subject": {
+          "reference": "Patient/MillieBryant"
+        },
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "1 tablet two times per day",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 500,
               "unit": "mg"
             }
           }
