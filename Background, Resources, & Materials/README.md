@@ -19,3 +19,4 @@ This folder contains the following documents:
 5. **Table Reference** (`.pptx`): Materials on how to address medication reconciliation
 6. **RxNorm and FHIR PIT for iOS** (`.md`): Accessing FHIR PIT and RxNorm APIs from an iOS Project
 7. **OpenEMR FHIR Endpoints** (`.md`): Available FHIR endpoints for OpenEMR
+8. **Clinical Workshop Links** (`.md`): Links to resources cited at the Clinical Workshop.
