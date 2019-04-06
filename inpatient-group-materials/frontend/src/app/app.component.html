@@ -1,0 +1,55 @@
+<ng-container *ngIf="patient">
+<label>Patient Name: <span>{{patient.name[0].given}} {{patient.name[0].family}}</span></label>
+<label>Gender: <span>{{patient.gender}}</span></label>
+<label>Birth Date: <span>{{patient.birthDate | date}}</span></label>
+<label>Mobile Phone: <span>{{getMobile(patient)}}</span></label>
+<img src="assets/phil.jpg" style="float:right; margin-top:16px; margin-right: 16px;" width="100" height="100">
+</ng-container>
+
+
+<h1>Active Medications</h1>
+<table class="table" *ngIf="meds">
+  <tr>
+    <th>Medication</th>
+    <th>Dose</th>
+    <th>Date Prescribed</th>
+    <th>Prescription Status</th>
+    <th>Information Source</th>
+    <th>Confidence Level</th>
+  </tr>
+
+  <tr *ngFor="let med of getActiveMeds(meds)">
+    <td>{{med.resource.medicationReference.reference}}</td>
+    <td>{{formatDosage(med.resource.dosage)}}</td>
+    <td>{{med.resource.effectivePeriod.start | date}}</td>
+    <td>{{med.resource.status}}</td>
+    <td>{{med.resource.informationSource.reference}}</td>
+    <td>
+      <img src="assets/gradient.jpg" width="70" height="70">
+      <img src="assets/details.svg">Details
+    </td>
+  </tr>
+
+</table>
+
+<h1>Inactive Medications</h1>
+<table class="table" *ngIf="meds">
+
+  <tr>
+    <th>Medication</th>
+    <th>Dose</th>
+    <th>Effective Start</th>
+    <th>Prescription Status</th>
+    <th>Information Source</th>
+    <th>Confidence Level</th>
+  </tr>
+
+  <tr *ngFor="let med of getInactiveMeds(meds)">
+    <td>{{med.resource.medicationReference.reference}}</td>
+    <td>{{formatDosage(med.resource.dosage)}}</td>
+    <td>{{med.resource.effectivePeriod.start | date}}</td>
+    <td>{{med.resource.status}}</td>
+    <td>{{med.resource.informationSource.reference}}</td>
+    <img src="assets/gradient.jpg" width="70" height="70">
+  </tr>
+</table>
