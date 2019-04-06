@@ -1,0 +1,258 @@
+{
+  "resourceType": "Bundle",
+  "id": "fe74cead-8062-46e5-95a2-9e633eefe9ab",
+  "meta": {
+    "lastUpdated": "2019-04-05T18:08:16.239+00:00"
+  },
+  "type": "searchset",
+  "total": 4,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://fire-pit.mihin.org/po-ehr-2/baseDstu3/MedicationStatement?_pretty=true&patient=MillieBryant"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://fire-pit.mihin.org/po-ehr-2/baseDstu3/MedicationStatement/MillieBryantGabapentinMS",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "MillieBryantGabapentinMS",
+        "meta": {
+          "versionId": "7",
+          "lastUpdated": "2019-04-04T13:34:36.000+00:00",
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/daf-medicationstatement"
+          ]
+        },
+        "identifier": [
+          {
+            "value": "27f8a4d1-1bbd-48ce-ad32-d7fcafbf17dfa"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/Gabapentin300mg"
+        },
+        "effectivePeriod": {
+          "start": "2019-01-07"
+        },
+        "informationSource": {
+          "reference": "https://fire-pit.mihin.org/qhin-hdir/baseDstu3/Practitioner/RalphFarrell"
+        },
+        "subject": {
+          "reference": "Patient/MillieBryant"
+        },
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "1 tablet three times per day",
+            "timing": {
+              "repeat": {
+                "frequency": 3,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 300,
+              "unit": "mg"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fire-pit.mihin.org/po-ehr-2/baseDstu3/MedicationStatement/MillieBryantMetforminMS",
+      "resource": {
+        "resourceType": "MedicationStatement",
+       "id": "MillieBryantMetforminMS",
+        "meta": {
+          "versionId": "5",
+          "lastUpdated": "2019-04-04T13:34:35.000+00:00",
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/daf-medicationstatement"
+          ]
+        },
+        "identifier": [
+          {
+            "value": "27f8a4d1-1bbd-48ce-ad32-d7fcafbf17dfa"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/Metformin500mg"
+        },
+       "effectivePeriod": {
+          "start": "2019-01-07"
+        },
+        "informationSource": {
+          "reference": "https://fire-pit.mihin.org/qhin-hdir/baseDstu3/Practitioner/RalphFarrell"
+        },
+        "subject": {
+          "reference": "Patient/MillieBryant"
+        },
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "1 tablet two times per day",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 500,
+              "unit": "mg"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fire-pit.mihin.org/po-ehr-2/baseDstu3/MedicationStatement/MillieBryantNitroglycerinMS",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "MillieBryantNitroglycerinMS",
+        "meta": {
+          "versionId": "4",
+          "lastUpdated": "2019-04-03T15:19:22.000+00:00",
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/daf-medicationstatement"
+          ]
+        },
+        "identifier": [
+          {
+            "value": "27f8a4d1-1bbd-48ce-ad32-d7fcafbf17dfa"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/Nitroglycerin0.3MG"
+        },
+        "effectivePeriod": {
+         "start": "2019-03-10"
+        },
+        "informationSource": {
+          "reference": "https://fire-pit.mihin.org/qhin-hdir/baseDstu3/Practitioner/AubreySadler"
+        },
+        "subject": {
+          "reference": "Patient/MillieBryant"
+        },
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "1 SL q5min up to 3 times at onset of angina",
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "37839007",
+                  "display": "Sublingual Route"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 0.3,
+              "unit": "MG"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://fire-pit.mihin.org/po-ehr-2/baseDstu3/MedicationStatement/MillieBryantWarfarin5MS",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "MillieBryantWarfarin5MS",
+        "meta": {
+          "versionId": "5",
+          "lastUpdated": "2019-04-04T13:34:36.000+00:00",
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/daf-medicationstatement"
+          ]
+        },
+        "identifier": [
+          {
+            "value": "27f8a4d1-1bbd-48ce-ad32-d7fcafbf17dfa"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/Warfarin5mg"
+        },
+        "effectivePeriod": {
+          "start": "2019-03-10"
+        },
+        "informationSource": {
+          "reference": "https://fire-pit.mihin.org/qhin-hdir/baseDstu3/Practitioner/AubreySadler"
+        },
+        "subject": {
+          "reference": "Patient/MillieBryant"
+        },
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "1 tablet per day",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "asNeededBoolean": false,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "260548002",
+                  "display": "Oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 5,
+              "unit": "mg"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ]
+}

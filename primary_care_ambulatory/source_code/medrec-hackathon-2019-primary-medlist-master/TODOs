@@ -1,0 +1,37 @@
+TO DO List:
+
+Coordinator:
+	- pull data from FHIR-PITs/OpenEMR
+		- add note element to FHIR MedicationStatement/MedicationRequest resource, indicating when pulled
+	- compare against what we've already received
+		- if nothing, coordinate sources and save/present list
+		- if something, compare against original sources
+	- create RESTful API to access pt medlist
+		- create - add pt
+				 - add medication
+				 - add note to medication record (pt view)
+		- retrieve - with pt information
+				- retrieve medication list
+		- update
+				- modify medication in list
+		- delete
+				- "soft delete" - update record
+
+MongoDB:
+	Define DB (JSON) or do we want mongo as a repository for the medication objects??
+	- need place to store original data from EHRs
+	- need place to store metadata
+	- patient centric, but ideally maybe have an EMPI that pulls together patient identifiers
+	original data
+	- Patient Resource
+		MedicationStatement
+		MedicationRequest
+	cloud-based data	
+	
+	
+PostgreSQL:
+	Might give us a better handle on the metadata that we're looking to update - something to think about
+	
+Web app:
+	- access REST services above
+	- user interface to work with providers
